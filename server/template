@@ -1,0 +1,16 @@
+extends SceneTree 
+
+
+func _init():
+    var Executor = null
+    var OS = null
+    var Directory = null
+    var ConfigFile = null
+    var File = null
+    print("=== {{ .Id }} ===")
+    printerr("=== {{ .Id }} === ")
+
+    {{ range .Code }}{{ . }}
+    {{end}}
+
+    quit()
