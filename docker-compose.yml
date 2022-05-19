@@ -6,6 +6,7 @@ services:
     volumes:
       - ./data/scripts:/app/scripts
       - ./data/logs:/app/logs
-  bot: 
+  bot:
     build: ./bot
-    
+    env_file:
+      - ./bot/.env

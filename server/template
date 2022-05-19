@@ -7,6 +7,8 @@ func _init():
     var Directory = null
     var ConfigFile = null
     var File = null
+    var HTTPClient = null
+    var GDScript = null
     print("=== {{ .Id }} ===")
     printerr("=== {{ .Id }} === ")
 

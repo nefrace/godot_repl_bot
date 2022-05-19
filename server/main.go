@@ -80,7 +80,7 @@ func main() {
 			err_sep = append(err_sep, "")
 		}
 		if ctx.Err() == context.DeadlineExceeded {
-			c.JSON(http.StatusRequestTimeout, gin.H{"status": "script timeout", "stdout": out_sep[1], "stderr": err_sep[1]})
+			c.JSON(http.StatusRequestTimeout, gin.H{"status": "timeout", "stdout": out_sep[1], "stderr": err_sep[1]})
 			return
 		}
 		if err != nil {
